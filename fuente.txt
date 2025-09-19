@@ -1,0 +1,29 @@
+# nota de ingredientes
+
+<## Receta para crear pancakes esponjosos al estilo americano.
+Rinde para 4 personas. ##>
+
+receta PANCAKES_AMERICANOS {
+    ingrediente harina = 1.5;
+    ingrediente azucar = 2;
+    ingrediente polvo_hornear = 1;
+    ingrediente huevos = 2;
+    ingrediente leche = 1.25;
+    ingrediente mantequilla_derretida = 3;
+
+    # El secreto está en no sobrebatir la mezcla.
+
+    preparar("los ingredientes secos");
+    mezclar(harina, azucar, polvo_hornear);
+
+    preparar("los ingredientes húmedos");
+    batir(huevos);
+    mezclar(leche, mantequilla_derretida);
+
+    preparar("la masa final");
+    mezclar("secos con húmedos suavemente");
+
+    reposar("la masa por 5 minutos");
+    hornear("en un sartén caliente con un poco de mantequilla");
+    servir("calientes con miel o fruta");
+}
