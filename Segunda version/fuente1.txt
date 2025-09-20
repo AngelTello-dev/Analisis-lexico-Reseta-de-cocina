@@ -1,0 +1,46 @@
+<##
+RECETA: PASTEL DE CHOCOLATE IMPOSIBLE
+##>
+
+preparar PASTEL_CHOCOLATE() {
+    # Definición de ingredientes básicos
+    ingrediente harina = 2;         # Cantidad entera
+    ingrediente azucar = 1.5;       # Medida decimal
+    ingrediente huevos = 3;
+    ingrediente leche = .250;       # Medida en litros
+    ingrediente levadura = 1.2E10-2; # Notación científica para microgramos
+
+    # Recetas constantes (valores fijos)
+    receta TEMP_HORNO = 180;
+    receta TIEMPO_COCCION = 45;
+
+    # Pasos de la preparación
+    mezclar(harina + azucar);
+    batir(huevos);
+    
+    # Instrucción para el chef
+    servir "La mezcla debe quedar sin grumos.";
+
+    marinar(); # Acción sin parámetros
+    hornear(TEMP_HORNO);
+    reposar(TIEMPO_COCCION);
+}
+
+# SECCIÓN DE PRUEBA DE ERRORES LÉXICOS
+
+# Error: Símbolos no reconocidos en el lenguaje
+$esto_no_es_valido;
+@tampoco_esto;
+
+# Error: Símbolo de interrogación no reconocido
+cortar?();
+
+# Error: El acento circunflejo (^) no es un utensilio válido
+ingrediente potencia = 2 ^ 3;
+
+# Error: Corchetes no definidos como HERRAMIENTA
+receta LISTA_INGREDIENTES = ["sal", "pimienta"];
+
+# Error: Un identificador no puede empezar con guion bajo
+ingrediente _secreto = "ajo en polvo";
+
